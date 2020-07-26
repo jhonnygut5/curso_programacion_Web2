@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web2</title>
+    <!-- css de bootstrat -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <!-- js de bootstrat -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.5.1.slim.js/jquery-3.5.1.slim.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- llamar al estilo de la pagina Index -->
+    <link rel="stylesheet" href="./css/IndexStyle.css">
+
+    <!-- llamar al archivo de texto JavaScript -->
+    <!-- javaScript del proyecto Nemesis -->
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/obj1.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/Bom.js"></script> -->
+    <script type="text/javascript" src="./js/Dom.js"></script>
+</head>
+<body>
+    <!-- CREAMOS EL NAV BAR DEL PROYECTO NEMESIS -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h1>
+        <div>
+          <span>
+            PROYECTO NEMESIS
+          </span>
+        </div>
+      </h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AUTOR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">SESION</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="container">
+    <img src="./img/p2.jpg" alt="Programación Web2">
+  </div>
+  <header>
+    <menu>
+      <ul>
+        <li>
+          <!--                               onclick="alerta()" -->
+          <a class="botonMenu" type="submit" onclick="contenido1()">
+            Efecto #1
+          </a>
+        </li>
+        <li>
+          <!--                               onclick="atras()" -->
+          <a class="botonMenu" type="submit" onclick="contenido2()">
+            Efecto #2
+          </a>
+        </li>
+        <li>
+          <!--                               onclick="adelante()" -->
+          <a class="botonMenu" type="submit" onclick="contenido3()">
+            Efecto #3
+          </a>
+        </li>
+        <li>
+          <!--                               onclick="ir()" -->
+          <a class="botonMenu" type="submit" onclick="contenido4()">
+            Efecto #4
+          </a>
+        </li>
+        <li>
+          <!--                               onclick="ir()" -->
+          <a class="botonMenu" type="submit" onclick="contenido4()">
+            Efecto #5
+          </a>
+        </li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <section>
+      <article id="contArticulos">
+        <!-- mi primer texto -->
+        <h2 id="mTitulo1">
+          Este es mi primir tituto #1
+        </h2>
+        <p id="contenido1">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nemo illum quasi non ipsa vel sit in eaque neque, deleniti officiis nostrum odio quod est aperiam doloremque repellendus voluptates sapiente.
+        </p>
+        <!-- mi segundo texto -->
+        <h2 id="mTitulo2">
+          Este es mi primir tituto #2
+        </h2>
+        <p id="contenido2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nemo illum quasi non ipsa vel sit in eaque neque, deleniti officiis nostrum odio quod est aperiam doloremque repellendus voluptates sapiente.
+        </p>
+        <!-- mi tercer texto -->
+        <h2 id="mTitulo3">
+          Este es mi primir tituto #3
+        </h2>
+        <p id="contenido3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nemo illum quasi non ipsa vel sit in eaque neque, deleniti officiis nostrum odio quod est aperiam doloremque repellendus voluptates sapiente.
+        </p>
+      </article>
+      <aside id="contAside">
+        <h2>
+          Este es mi Menu
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate veritatis vitae ratione officiis ad at odio dolores, delectus, ea amet obcaecati sint, error dolore quam. Nobis quibusdam corrupti illo?
+        </p>
+      </aside>
+    </section>
+
+  </main>
+  <footer>
+    <div class="pie">
+      <p>
+        © Copyright 2020 Copyright.bo - Todos los Derechos Reservados - Legal UPDS
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

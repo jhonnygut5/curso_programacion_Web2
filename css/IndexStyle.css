@@ -1,0 +1,140 @@
+:root {
+    --color-bg-fondo: #b0b0b0;
+    --color-bg-botonMenu1: #fa7070;
+    --color-bg-fondoArticulo: #ffffff;
+    --color-bg-fondoAside: #a87777;
+    --color-bg-fondoMenu: #ff0000;
+}
+
+* {
+    padding: 5px 5px 5px 5px;
+}
+
+body {
+    background-color: var(--color-bg-fondo);
+}
+
+body nav h1 div span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-bg-fondoArticulo);
+}
+
+body nav div ul {
+    flex: auto;
+    justify-content: flex-end;
+}
+
+body nav div ul li {
+    padding: 5px 5px 5px 5px;
+    /* background: blue; */
+}
+
+body nav div ul li a {
+    border-radius: 10px;
+    color: rgb(255, 0, 0) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.5em;
+    background: var(--color-bg-fondoArticulo);
+    border: 2px solid;
+    border-color: #51585a;
+    position: relative;
+}
+
+body nav div ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(6, 65, 104,0.1);
+    transition: all 1s ease;
+}
+body nav div ul li a:hover:before {
+    width: 100%;
+}
+
+@media (min-width: 375px) {
+    body nav div {
+        display: flex;
+        height: 100%;
+    }
+    body nav h1 {
+        align-items: center;
+    }
+    body nav div ul {
+        text-align: center;
+    }    
+}
+body .portada {
+    width: 50%;
+}
+
+body div img {
+    width: 100%;
+}
+
+body header menu {
+    background: var(--color-bg-fondoMenu);
+    overflow: hidden;
+} 
+
+body header menu ul {
+    list-style: none;
+}
+body header menu ul li {
+    float: left;
+}
+body header menu ul li .botonMenu {
+    border-bottom: solid  var(--color-bg-fondo);
+    border-radius: 10px;
+    background: var(--color-bg-botonMenu1);
+    color: var(--color-bg-fondoArticulo);
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+body header menu ul li .botonMenu:hover {    
+    background: #cccccc;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+body main section article {
+    width: 68.8%;
+    background: var(--color-bg-fondoArticulo);
+    float: left;
+}
+body main section aside {
+    width: 30%;
+    background: var(--color-bg-fondoAside);
+    float: right;
+}
+
+@media (max-width: 992px) {
+    body nav div ul {
+        text-align: center;
+        background: #000000;
+    }
+    body .portada {
+        width: 100%;
+    }
+    body main section article {
+        width: 100%;
+    }
+    body main section aside {
+        width: 100%;
+    }
+}
+
+body footer div p {
+    clear: left;
+    margin-top: 10px;
+    background: #000000;
+    color: var(--color-bg-fondoArticulo);
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;    
+}
